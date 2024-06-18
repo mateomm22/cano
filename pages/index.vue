@@ -28,7 +28,7 @@
           <strong>
             Imagen:
           </strong>
-          <img :src="prodData.data.featuredImage.url" alt="">
+          <img v-if="prodData.data.featuredImage" :src="prodData.data.featuredImage.url" alt="">
         </div>
         <p class="price">
           <strong>
